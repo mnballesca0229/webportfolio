@@ -1,0 +1,46 @@
+
+/*CSS Reset*/
+/*Allows to easily mainpulate the sizes and positioning of elements*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/*Google Font*/
+body {
+	font-family: 'M Plus Rounded 1c', sans-serif;
+	background-color: #101019;
+	color: white;
+}
+.heading-gradient {
+  font-size: 72px;
+  background: -webkit-linear-gradient(#e41bf6, #82c0f2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+p {
+   font-size: 0.9rem;
+   font-family: Circular Std Book, sans-serif;
+
+}
+
+nav {
+	position: sticky;
+	top: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.work-gradient {
+	
+/*	font-size: 72px;*/
+  background: -webkit-linear-gradient(#a9f2f1, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
