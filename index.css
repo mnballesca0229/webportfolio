@@ -18,29 +18,87 @@ body {
 }
 .heading-gradient {
   font-size: 72px;
-  background: -webkit-linear-gradient(#e41bf6, #82c0f2);
+/*  background: -webkit-linear-gradient(#e41bf6, #82c0f2);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;*/
 }
 p {
-   font-size: 0.9rem;
-   font-family: Circular Std Book, sans-serif;
+   font-size: 1rem;
+   font-family: 'Circular Std Book', sans-serif;
 
 }
 
 nav {
-	position: sticky;
-	top: 0px;
+	background-color: #101019;
+	border-bottom: 1px solid hsla(0,0%,76.9%,.25);
 }
 
-a {
-	text-decoration: none;
-}
+
 
 .work-gradient {
 	
 /*	font-size: 72px;*/
-  background: -webkit-linear-gradient(#a9f2f1, #ffffff);
+  background: -webkit-linear-gradient(-45deg,#a9f2f1, #ffffff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+
+
+div.text {
+	background: linear-gradient(-45deg, #e41bf6, #e41bf6, #82c0f2, #82c0f2);
+	background-size: 300%;
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animated_text 10s ease-in-out infinite;
+	-moz-animation: animated_text 10s ease-in-out infinite;
+	-webkit-animation: animated_text 10s ease-in-out infinite;
+}
+
+@keyframes animated_text {
+	0% { background-position: 0px 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0px 50%; }
+}
+
+a {
+	color: white;
+	text-decoration: none;
+	transition: all .3s ease-in-out;
+}
+
+button {
+    transition-property: height, visibility;
+    transition-duration: .35s;
+}
+
+
+a:hover {
+  color: #6cfbf6;
+  text-decoration: none;
+}
+
+#body-links {
+	border-bottom: 1px solid hsla(0,0%,76.9%,.25);
+	text-decoration: none;
+	width: 50rem;
+}
+
+h5 {
+	font-family: 'Roboto', sans-serif;
+	text-transform: lowercase;
+}
+
+#footer {
+	border-top: 1px solid hsla(0,0%,76.9%,.25);
+}
+
+#gmap_canvas {
+	height: 60vh;
+	width: 100%;
+}
+
+
+
