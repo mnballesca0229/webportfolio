@@ -31,6 +31,7 @@ p {
 nav {
 	background-color: #101019;
 	border-bottom: 1px solid hsla(0,0%,76.9%,.25);
+	border-top: 1px solid hsla(0,0%,76.9%,.25);
 }
 
 
