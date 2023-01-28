@@ -15,6 +15,7 @@ body {
 	font-family: 'M Plus Rounded 1c', sans-serif;
 	background-color: #101019;
 	color: white;
+
 }
 .heading-gradient {
   font-size: 72px;
@@ -32,8 +33,14 @@ nav {
 	background-color: #101019;
 	border-bottom: 1px solid hsla(0,0%,76.9%,.25);
 	border-top: 1px solid hsla(0,0%,76.9%,.25);
+	
 }
 
+nav .nav, nav .nav-trademark {
+	margin: 1rem;
+	display: inline;
+
+}
 
 
 .work-gradient {
@@ -94,6 +101,7 @@ h5 {
 
 #footer {
 	border-top: 1px solid hsla(0,0%,76.9%,.25);
+	height: 10px;
 }
 
 #gmap_canvas {
@@ -101,5 +109,84 @@ h5 {
 	width: 100%;
 }
 
+.right-nav {
+	text-align: right;
+	position: relative;
+	
+}
+
+/*body{
+  height:1000%;
+  margin: 0;
+  --x: calc(var(--posX, 0) * 1px);
+  --y: calc(var(--posY, 0) * 1px);
+  background-image: 
+    linear-gradient(115deg, rgb(211 255 215), rgb(0 0 0)), 
+    radial-gradient( 90% 100% at calc( 50% + var(--x)) calc( 0% + var(--y)), rgb(200 200 200), rgb(022 000 045)), 
+    radial-gradient(100% 100% at calc( 80% - var(--x)) calc( 0% - var(--y)), rgb(250 255 000), rgb(036 000 000)), 
+    radial-gradient(150% 210% at calc(100% + var(--x)) calc( 0% + var(--y)), rgb(020 175 125), rgb(000 010 255)), 
+    radial-gradient(100% 100% at calc(100% - var(--x)) calc(30% - var(--y)), rgb(255 077 000), rgb(000 200 255)), 
+    linear-gradient(60deg, rgb(255 000 000), rgb(120 086 255));
+  background-blend-mode: overlay, overlay, difference, difference, difference, normal;
+}
+*/
+
+/*Cursor Animation*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+
+/*body {
+    font-family: "Poppins", sans-serif;
+  
+}*/
+.hero-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    padding: 60px;
+    background: #000;
+    color: #fff;
+}
+.hero-text h1{
+    font-size:5vw;
+    font-weight: 300;
+}
+.hero-text h1 span{
+    color: #88ce02;
+    font-weight: 700;
+}
+.cursor{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    pointer-events: none;
+}
 
 
+.cursor-text{
+/*    text-transform: uppercase;*/
+    font-size: 14px;
+    font-weight: 400;
+}
+.cursor-text .char {
+    position: absolute !important;
+}
+
+
+
+/*Cursor Animation End*/
