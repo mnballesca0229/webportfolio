@@ -43,6 +43,7 @@ function cursorMove(event) {
 
 
 
+
 function init() {
     rounded(radius);
     window.addEventListener('mousemove', cursorMove);
