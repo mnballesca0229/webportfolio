@@ -16,6 +16,9 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
 
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
 	<!-- External CSS -->
 	<link rel="stylesheet" type="text/css" href="./index.css">
 
@@ -25,7 +28,17 @@
 </head>
 <body>
 
-	<script src="./index.js"></script>
+	
+
+	<!-- Cursor animation -->
+	
+		<div class="cursor">
+		   <div class="cursor-inner">
+		       <div class="cursor-text" data-splitting>ONIN - WEB - DEVELOPER -</div>
+		   </div>
+ 		</div>
+	
+	<!-- Cursor animation End -->
 
 	<!-- Image and text -->
 
@@ -69,7 +82,7 @@
 		
 
 		<div class="col-8 offset-2 col-xl-6 offset-xl-1 offset-2 col-lg-6 offset-lg-2" id="main-text" >
-			<h3 class="mt-5">Give me a <a href="tel:+639171226820">call 🇵🇭</a>, send me an <a href="mailto:mnballesca@gmail.com">email 📧</a>, or Connect with me online<h3>
+			<h3 class="mt-3">Give me a <a href="tel:+639171226820">call 🇵🇭</a>, send me an <a href="mailto:mnballesca@gmail.com">email 📧</a>, or Connect with me online<h3>
 		</div>
 	</div>
 	
@@ -77,7 +90,7 @@
 
 
 <!-- Forms and Map  -->
-	 <div class="row px-md-3">
+	 <div class="row px-md-3 ml-3 mr-3">
 	                 <div class="col-md-6 my-4" data-aos="fade-up"
      data-aos-anchor-placement="center-bottom">
 	                     <h4 class="text-center my-4">I'm here 📌</h4>
@@ -89,15 +102,16 @@
 	                     <form action="mailto:mnballesca@gmail.com"method="post" enctype="text/plain">
 	                         <div class="form-group">
 	                             <label>Full Name</label>
-	                             <input type="text" class="form-control" name="name">
+	                             <input type="text" class="form-control" name="name" placeholder="Juan Dela Cruz">
 	                         </div>
 	                         <div class="form-group">
 	                             <label>Email Address</label>
-	                             <input type="email" class="form-control" name="email">
+	                             <input type="email" class="form-control" name="email"
+	                             placeholder="name@example.com">
 	                         </div>
 	                         <div class="form-group">
 	                             <label>Message</label>
-	                             <textarea type="text" name="comment" class="form-control"></textarea>
+	                             <textarea type="text" name="comment" class="form-control" placeholder="How I can help you?"></textarea>
 	                         </div>
 	                         <button type="submit" class="btn btn-outline-light btn-block" value="send">Send</button>
 	                     </form>
@@ -134,6 +148,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     <!-- JS Bootstrap Script End -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <script src="./index.js"></script>
   	<script>
   	  AOS.init();
   	</script>
