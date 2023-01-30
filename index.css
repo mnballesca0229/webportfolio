@@ -32,6 +32,7 @@ body {
   left: 0px;
   background-size: 30rem 25rem;
   opacity: 100;
+  transition-duration: all .4s ease-in-out;
 }
 
 
@@ -39,6 +40,7 @@ body {
 .hero::before {
 	 
   opacity: 0.20;
+  transition: all .4s ease-in-out;
 }
 }
 
