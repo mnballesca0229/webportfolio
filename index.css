@@ -22,15 +22,15 @@ body {
 
 .hero::before {
 	content: "";
-  background-image: url('https://iili.io/H0mjzl4.png');
+  background-image: url('https://iili.io/H1LBHhu.png');
   background-repeat: no-repeat;
 	background-position: right top;
   position: absolute;
-  top: 0px;
+  top: 10px;
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-size: 30rem 25rem;
+  background-size: 30rem 24rem;
   opacity: 100;
   transition-duration: all .4s ease-in-out;
 }
@@ -62,7 +62,7 @@ nav {
 	border: 1px solid hsla(0,0%,76.9%,.25);
 	border-color: #2b2b35;
   font-family: "Poppins", sans-serif;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(30px);
 	position: absolute;
 	border-radius: 15px;
 	
@@ -246,12 +246,17 @@ ul {
 .preloader {
 	position: fixed;
 	z-index: 999999;
-	background: white;
+	background: #101019;
 	height: 100%;
 	width: 100%;
+	background-image:url('https://iili.io/H1LAi9j.png'); 
+	background-repeat: no-repeat;
+	background-position: center;
+  background-size: 10rem 10rem;
+
 }
 
-/*.loader {
+.loader {
 	border: 0 solid transparent;
 	border-radius: 50%;
 	width: 150px;
@@ -259,11 +264,12 @@ ul {
 	position: absolute;
 	top:calc(50vh - 75px);
 	left: calc(50vw - 75px);
+
 }
 
 .loader:before, .loader:after {
 	content: '';
-	border: 1em solid #ff5733;
+	border: 1em solid #f4ff3c;
 	width: inherit;
 	height: inherit;
 	position: absolute;
@@ -271,6 +277,7 @@ ul {
 	left: 0;
 	animation: loader 2s linear infinite;
 	opacity: 0;
+	
 }
 .loader:before {
 	animation-delay: .5s;
@@ -287,40 +294,8 @@ ul {
 		transform: scale(1);
 		opacity: 0;
 	}
-}*/
-
-@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
-
-body {
-    margin: 0px;
 }
 
-#loader {
-    position: absolute;
-    margin: auto;
-    width: 100vw;
-    height: 80pt;
-    top: 0;
-    bottom: 0;
 
-    filter: url(#threshold) blur(0.6px);
-		position: absolute;
-		top:calc(50vh - 75px);
-		left: calc(50vw - 75px);
-}
-
-#text1,
-#text2 {
-    position: absolute;
-    width: 100%;
-    display: inline-block;
-    top:calc(50vh - 75px);
-    font-family: font-family: 'Roboto', sans-serif;
-    font-size: 50pt;
-    color: black;
-    text-align: center;
-
-    user-select: none;
-}
 
 /*PRELOADER* END/

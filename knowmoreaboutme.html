@@ -24,12 +24,19 @@
 
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-	<link rel="icon" href="https://iili.io/H1rPq5G.png" type="image/x-icon"/>
+	<link rel="icon" href="https://iili.io/H1LzJ0G.png" type="image/x-icon"/>
 
 	<title>Michael Nino "Onin" Ballesca 🚀 - Web Developer </title>
 </head>
 <body>
 	
+	<!-- Preloader -->
+	<div class="preloader">
+		<div class="loader"> 
+			
+		</div> 
+	</div>
+
 
 	<!-- Cursor animation -->
 	
@@ -46,7 +53,7 @@
 	<div class="container-fluid row navbar">
 	<nav class="navbar  bg-none topnav fixed-top topnav-centered col-lg-6 offset-lg-3 col-xl-6 offset-xl-3 col-10 offset-1 mt-5 opacity">
 	  <a class="navbar-brand" href="#">
-	    <a href="#"><img src="https://iili.io/H1rPq5G.png"  width="30" height="30" class="d-inline-block align-top rounded-circle" alt=""></a>
+	    <a href="#"><img src="https://iili.io/H1LzJ0G.png"  width="30" height="30" class="d-inline-block align-top rounded-circle" alt=""></a>
 	  </a>
 	  <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
@@ -75,7 +82,7 @@
 
 	<div class="row container-fluid pb-5 pt-5 mt-5" >
      	<div class=" col-lg-4 col-md-4 col-sm-6 " data-aos="fade-right">
-			<a href="https://freeimage.host/"><img src="https://iili.io/H0M5fx1.jpg" class="d-inline-block align-top rounded-circle img-fluid" alt=""></a>
+			<a href="#"><img src="https://iili.io/H1L3vAg.png" class="d-inline-block align-top rounded-circle img-fluid" alt=""></a>
 		</div>
 		<div class=" col-lg-8 col-md-8 col-sm-6" id="main-text" data-aos="fade-up">
 		<h2>i'm<div class="heading-gradient text small">"onin"</div></h2> 
@@ -181,6 +188,14 @@
   	<script>
   	  AOS.init();
   	</script>
+
+  	<!-- Preloader Script -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script>
+			setTimeout(function(){
+				$('.preloader').fadeToggle();
+			},200);
+		</script>
 
 </body>
 </html>
