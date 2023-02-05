@@ -65,6 +65,12 @@ nav {
   backdrop-filter: blur(30px);
 	position: absolute;
 	border-radius: 15px;
+
+/*Safari blur*/
+	-webkit-backdrop-filter: blur(30px);
+   -moz-backdrop-filter: blur(30px);
+   -ms-backdrop-filter: blur(30px);
+  
 	
 }
 
