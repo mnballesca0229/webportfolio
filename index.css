@@ -5,6 +5,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+
+	font-family: "Poppins", sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -21,10 +23,10 @@ body {
 
 
 .hero::before {
-	content: "";
+  content: "";
   background-image: url('https://iili.io/H1LBHhu.png');
   background-repeat: no-repeat;
-	background-position: right top;
+  background-position: right top;
   position: absolute;
   top: 10px;
   right: 0px;
@@ -120,15 +122,19 @@ a {
 	text-decoration: none;
     transition: all .3s ease-in-out;
   	position: relative;
+  	-webkit-filter: grayscale(100%);
+  	filter: gray;
 /*    padding: -2em;*/
 }
 
 a:hover {
   color: #6cfbf6;
   text-decoration: none;
+  -webkit-filter: grayscale(0%);
+  filter: gray;
 }
 
-a::after {
+.body-links::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -139,12 +145,13 @@ a::after {
   background-color: white;
   transform-origin: bottom left;
   transition: transform 0.25s ease-out;
+  
 }
 
-a:hover::after{
+.body-links:hover::after{
   transform: scaleX(1);
   transform-origin: bottom left;
-
+  \
 }
 
 button {
@@ -265,64 +272,93 @@ ul {
 /*Cursor Animation End*/
 
 
-/*PRELOADER*/
+/*/*PRELOADER*/
 
 .preloader {
 	position: fixed;
 	z-index: 999999;
-	background: #101019;
+	background: #f1f1f1;
 	height: 100%;
 	width: 100%;
-	background-image:url('https://iili.io/HEJS1ft.png'); 
-	background-repeat: no-repeat;
+/*	/background-image:url('https://iili.io/HEJS1ft.png'); */
+	/*background-repeat: no-repeat;
 	background-position: center;
-  	background-size: 10rem 10rem;
-  	
+  	background-size: 10rem 10rem;*/
+
 
 }
 
-.loader {
-	border: 0 solid transparent;
-	border-radius: 50%;
-	width: 150px;
-	height: 150px;
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+
+
+
+
+.content {
 	position: absolute;
-	top:calc(50vh - 75px);
-	left: calc(50vw - 75px);
-
+	top:calc(50vh);
+	left: calc(50vw);
 
 }
 
-.loader:before, .loader:after {
-	content: '';
-	border: 1em solid #f4ff3c;
-	width: inherit;
-	height: inherit;
+.content h2 {
+	color: #FFF;
+	font-size: 8em;
 	position: absolute;
-	top: 0;
-	left: 0;
-	animation: loader 2s linear infinite;
-	opacity: 0;
-
-	
-}
-.loader:before {
-	animation-delay: .5s;
-}
-@keyframes loader {
-	0%{
-		transform: scale(0);
-		opacity: 0;
-	}
-	50%{
-		opacity: 1;
-	}
-	100%{
-		transform: scale(1);
-		opacity: 0;
-	}
+	transform: translate(-50%, -50%);
 }
 
+.content h2:nth-child(1) {
+	color: #e8e8e5;
+	-webkit-text-stroke: 2px transparent;
+}
+
+.content h2:nth-child(2) {
+	color: #232323;
+	animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+	0%,
+	100% {
+		clip-path: polygon(
+			0% 45%,
+			16% 44%,
+			33% 50%,
+			54% 60%,
+			70% 61%,
+			84% 59%,
+			100% 52%,
+			100% 100%,
+			0% 100%
+		);
+	}
+
+	50% {
+		clip-path: polygon(
+			0% 60%,
+			15% 65%,
+			34% 66%,
+			51% 62%,
+			67% 50%,
+			84% 45%,
+			100% 46%,
+			100% 100%,
+			0% 100%
+		);
+	}
+}
 
 
 /*PRELOADER* END/
+*/
+
+/*Text Animation*/
+
+
+}
+
+
+/*Text Animation*/
+
