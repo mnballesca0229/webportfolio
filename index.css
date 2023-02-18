@@ -49,6 +49,12 @@ body {
 #header-text{
 	font-size: 50px;
 	font-weight: bolder;
+	-webkit-font-size: 50px;
+	-webkit-font-weight: bolder;
+	-moz-font-size: 50px;
+	-moz-font-weight: bolder;
+	-ms-font-size: 50px;
+	-ms-font-weight: bolder;
 }
 
 .heading-gradient {
