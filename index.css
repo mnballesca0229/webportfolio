@@ -38,16 +38,21 @@ body {
 }
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1000px) {
 .hero::before {
-	 
   opacity: 0.20;
   transition: all .4s ease-in-out;
 }
+
+}
+
+#header-text{
+	font-size: 50px;
+	font-weight: bolder;
 }
 
 .heading-gradient {
-  font-size: 72px;
+  font-size: 100px;
   background: -webkit-linear-gradient(#e41bf6, #82c0f2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -158,12 +163,11 @@ button {
 }
 
 
-
-
 #body-links {
 	
 	text-decoration: none;
 	width: 50rem;
+
 }
 
 h5 {
