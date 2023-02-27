@@ -3,13 +3,17 @@
 /*Allows to easily mainpulate the sizes and positioning of elements*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 * {
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 	box-sizing: border-box;
 	font-family: "Poppins", sans-serif;
 }
 html {
   scroll-behavior: smooth;
+  margin: 0px !important;
+  padding: 0px !important;
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -19,7 +23,6 @@ body {
 	background-color: #101019;
 	color: white;
 }
-
 
 
 .hero::before {
@@ -37,14 +40,86 @@ body {
   transition-duration: all .4s ease-in-out;
 }
 
-
-@media screen and (max-width: 1000px) {
-.hero::before {
-  opacity: 0.20;
-  transition: all .4s ease-in-out;
+#website{
+/*  display: flex;*/
+  flex-wrap: wrap;
+  border: 1px solid rgba(255,255,255, 0.1);;
+  background-size: 100% 100%;
+  position: relative;
+  background-color: rgba(255,255,255, 0.02);
+  border-radius: 55px;
+/*  margin: 0px auto;*/
 }
 
+#website:hover::before{
+	opacity: 1;
 }
+
+#website::before {
+	background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgba(255,255,255, 0.06), transparent 40%);
+	border-radius: inherit;
+	content: "";
+	height: 100%;
+	left: 0px;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	z-index: 0;
+	opacity: 0;
+	transition: opacity .4s;
+}
+
+
+
+#website-text{
+	font-family: 'Roboto', sans-serif;
+	font-size:33px;
+  font-weight: 100;
+  margin: 0px auto;
+  background-size: fill;
+ 	object-fit: fill;
+ 	line-height: 90%;
+}
+
+.sample-work p {
+	font-family: D-DIN Condensed,sans-serif;
+  line-height: 92.4%;
+  padding-top: 20px;
+}
+
+.imgBox {
+    padding: 0px;
+	margin-left: 10%;
+	margin-right: 10%;
+/*    height: 270px;*/
+}
+
+.img-container{
+	border-radius: 30px;
+	width: 275px; 
+	height: 350px;
+	position: relative;
+	overflow: hidden;
+	
+}
+
+.img-container img{
+  background-size: fill;
+  overflow: hidden;	
+  object-fit: fill;
+  position: relative;
+  display: none;
+  margin: 0px auto;
+
+ }
+
+
+.img-container{
+	margin: 0px auto;
+
+}
+
+
 
 #header-text{
 	font-size: 50px;
@@ -57,11 +132,47 @@ body {
 	-ms-font-weight: bolder;
 }
 
-.heading-gradient {
+/*.heading-gradient {
   font-size: 100px;
   background: -webkit-linear-gradient(#e41bf6, #82c0f2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}*/
+
+.website-gradient {
+  	background: linear-gradient(-60deg, #58bbd0, #58bbd0, #fff, #fff);
+	background-size: 400%;
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animated_text 3s ease-in-out infinite;
+	-moz-animation: animated_text 3s ease-in-out infinite;
+	-webkit-animation: animated_text 3s ease-in-out infinite;
+}
+
+.logo-gradient {
+  	background: linear-gradient(-60deg, #ef7f0f, #ef7f0f, #fff, #fff);
+	background-size: 400%;
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animated_text 3s ease-in-out infinite;
+	-moz-animation: animated_text 3s ease-in-out infinite;
+	-webkit-animation: animated_text 3s ease-in-out infinite;
+}
+
+.banner-gradient {
+  	background: linear-gradient(-60deg, #9df942, #9df942, #fff, #fff);
+	background-size: 400%;
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animated_text 3s ease-in-out infinite;
+	-moz-animation: animated_text 3s ease-in-out infinite;
+	-webkit-animation: animated_text 3s ease-in-out infinite;
 }
 p {
    font-size: 1rem;
@@ -74,8 +185,8 @@ nav {
 	border-bottom: 1px solid hsla(0,0%,76.9%,.25);
 	border: 1px solid hsla(0,0%,76.9%,.25);
 	border-color: #2b2b35;
-  font-family: "Poppins", sans-serif;
-  backdrop-filter: blur(30px);
+  	font-family: "Poppins", sans-serif;
+  	backdrop-filter: blur(30px);
 	position: absolute;
 	border-radius: 15px;
 
@@ -114,6 +225,7 @@ div.text {
 	background-size: 300%;
 	font-family: 'Roboto', sans-serif;
 	width: 100%;
+	font-size: 100px;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	animation: animated_text 5s ease-in-out infinite;
@@ -205,11 +317,6 @@ h3 {
 }
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 ul {
     list-style-type: none;
@@ -271,10 +378,6 @@ ul {
 
 
 }
-
-
-
-
 
 
 .content {
@@ -394,3 +497,128 @@ ul {
 
 /*Text Animation*/
 
+@media screen and (max-width: 1000px) {
+.hero::before {
+  opacity: 0.20;
+  transition: all .4s ease-in-out;
+}
+
+}
+
+@media screen and (max-width: 730px) {
+
+.img-container {
+	width: 235px; 
+	height: 300px;
+	margin: 0px auto;
+}
+
+#website-text{
+	text-align: center;
+}
+
+div.text {
+  font-size: 70px;
+  font-weight: bolder;
+}
+
+}
+
+/*Image Box Get to know more*/
+.img-container-about-me{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  margin: auto;
+}
+.img-container-about-me .box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: #000;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  overflow: hidden;
+  margin-right: 15px;
+  margin-top: 45px;
+}
+.img-container-about-me:hover .box {
+  transform: rotateY(25deg);
+}
+.img-container-about-me .box:hover ~ .box {
+  transform: rotateY(-25deg);
+}
+.img-container-about-me .box:hover {
+  transform: rotateY(0deg) scale(1.25);
+  z-index: 1;
+  box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+}
+.img-container-about-me .box .imgBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.img-container-about-me .box .imgBx:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg,#f00,#000);
+  z-index: 1;
+  opacity: 0;
+  transition: 0.5s;
+  mix-blend-mode: multiply;
+}
+.img-container-about-me .box:hover .imgBx:before {
+  opacity: 1;
+}
+.img-container-about-me .box .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img-container-about-me .box .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  padding: 20px;
+  align-items: flex-end;
+  box-sizing: border-box;
+}
+.img-container-about-me .box .content h2 {
+  color: #fff;
+  transition: 0.5s;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 20px;
+  transform: translateY(200px);
+  transition-delay: 0.3s;
+}
+.img-container-about-me .box:hover .content h2 {
+  transform: translateY(0px);
+}
+.img-container-about-me .box .content p {
+  color: #fff;
+  transition: 0.5s;
+  font-size: 14px;
+  transform: translateY(200px);
+  transition-delay: 0.4s;
+}
+.img-container-about-me .box:hover .content p {
+  transform: translateY(0px);
+}
+/*Image Box Get to know more*/
