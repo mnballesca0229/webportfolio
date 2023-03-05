@@ -72,9 +72,10 @@ body {
 
 
 #website-text{
-	font-family: 'Roboto', sans-serif;
+/*  font-family: 'Roboto', sans-serif;*/
+	font-family: "Poppins", sans-serif;
 	font-size:33px;
-  font-weight: 100;
+  font-weight: bold;
   margin: 0px auto;
   background-size: fill;
  	object-fit: fill;
@@ -82,13 +83,16 @@ body {
 }
 
 .sample-work p {
-	font-family: D-DIN Condensed,sans-serif;
+/*	font-family: D-DIN Condensed,sans-serif;*/
+/*font-family: 'Roboto', sans-serif;*/
+  font-family: "Poppins", sans-serif;
   line-height: 92.4%;
   padding-top: 20px;
+  font-size:13px;
 }
 
 .imgBox {
-    padding: 0px;
+  padding: 0px;
 	margin-left: 10%;
 	margin-right: 10%;
 /*    height: 270px;*/
@@ -533,6 +537,7 @@ div.text {
   transform-style: preserve-3d;
   perspective: 500px;
   margin: auto;
+  
 }
 .img-container-about-me .box {
   position: relative;
